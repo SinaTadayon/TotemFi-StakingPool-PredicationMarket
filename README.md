@@ -4,9 +4,6 @@ This repository consists of smart contracts required for TotemFi Multi-asset DAp
 
 The flow charts provided below are generated with mermaid.js package and can be used to understand the flows of the contracts:
 
-### Admin States
-![Admin States](https://github.com/TotemFi/totem-contracts-v2/blob/feature/TOT-754/add-mermaidjs-charts-to-readme/graphs/adminStates.png)
-
 ### mermaidjs code to generate this chart:
 ```mermaid
 %%{init: {'securityLevel': 'loose', 'theme':'neutral'}}%%
@@ -25,10 +22,6 @@ graph TD
     I --> J
     J --> K((Ready To Create Staking Pools))
 ```
-
-
-### User States
-![User States](https://github.com/TotemFi/totem-contracts-v2/blob/feature/TOT-754/add-mermaidjs-charts-to-readme/graphs/usersStates.png)
 
 ### mermaidjs code to generate this chart:
 ```mermaid
@@ -55,9 +48,6 @@ graph TD
     L --> P
     P --> Q((End))
 ```
-
-### Staking Pool States
-![StakingPool States](https://github.com/TotemFi/totem-contracts-v2/blob/feature/TOT-754/add-mermaidjs-charts-to-readme/graphs/stakingPoolStates.png)
 
 ### mermaidjs code to generate this chart:
 ```mermaid
@@ -155,11 +145,4 @@ then run
 ```
 ETHERSCAN_KEY=<your-api-key> npx hardhat verify --network bsc_testnet <contract-address> "constructor's-first-arg" "constructor's-second-arg" "constructor's-third-arg" "constructor's-forth-arg"
 ```
-
-#### How to work with smart contracts 
-
-- Information on how to use contracts can be found on the confluence page (the document below should be updated for this new project)
-
-https://totemfi.atlassian.net/wiki/spaces/TP/pages/84574258/Instruction+and+information+for+using+TotemFi+smart+contracts
-
 
