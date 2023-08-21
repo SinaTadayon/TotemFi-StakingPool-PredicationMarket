@@ -1,0 +1,14 @@
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomiclabs/hardhat-ethers";
+import "@nomiclabs/hardhat-waffle";
+import "solidity-coverage";
+import "hardhat-typechain";
+import "hardhat-deploy";
+import "hardhat-gas-reporter";
+import "@tenderly/hardhat-tenderly";
+import "@nomiclabs/hardhat-etherscan";
+import "hardhat-abi-exporter";
+import "@openzeppelin/hardhat-upgrades";
+import "hardhat-contract-sizer";
+declare const config: HardhatUserConfig;
+export default config;
